@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-wrapper">
+            <h1>贪吃蛇游戏2.0</h1>
+            <div class="difficulty-controls">
+                <label for="difficulty">难度: </label>
+                <select id="difficulty">
+                    <option value="easy" selected>简单</option>
+                    <option value="normal">一般</option>
+                    <option value="hard">困难</option>
+                </select>
+            </div>
+            <div class="author-info">
+                作者：不如吃茶去
+            </div>
+        </div>
+        <div class="game-info">
+            <div class="score">分数: <span id="score">0</span></div>
+            <div class="high-score">最高分: <span id="high-score">0</span></div>
+        </div>
+        <div class="game-container">
+            <canvas id="game-board"></canvas>
+        </div>
+        <div class="controls">
+            <button id="start-btn">开始游戏</button>
+            <button id="pause-btn">暂停</button>
+            <button id="reset-btn">重置</button>
+        </div>
+        <div class="instructions">
+            <p>使用方向键控制蛇的移动，或者点击屏幕上的方向按钮</p>
+        </div>
+        <div class="mobile-controls">
+            <button class="dir-btn up">↑</button>
+            <div class="middle-buttons">
+                <button class="dir-btn left">←</button>
+                <button class="dir-btn right">→</button>
+            </div>
+            <button class="dir-btn down">↓</button>
+        </div>
+
+    </div>
+    <script src="fixed-snake-game.js"></script>
+</body>
+</html>
